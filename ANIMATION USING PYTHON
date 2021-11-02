@@ -1,0 +1,27 @@
+''' CONING BY @SMARTcoderNEXAS'''
+
+from turtle import * # initialize all from turtle library (* indicate all property)
+
+import colorsys # another library which includes different colors
+
+bgcolor('black') #turtle background blcak (if you want change it to other color)
+
+speed(0) # turtle speed(here you can handle turtle speed )
+
+hideturtle()   # it hides turtle movement
+
+hue = 0.0  # its a variable
+
+for i in range(400):  # it decleres range of turtle number of moves
+
+    color=colorsys.hsv_to_rgb(hue,1,1)  # here color is the variable ,it stores the property of colorsys module,hue
+    
+    pencolor(color) # here swap the color variable with turtle
+
+    hue+=0.005 # (+= 0.005 it display different colors) if you not use this value  it appear red color
+
+    fd(i) # it indicate forward move of turtle
+
+    rt(20*100)  # it indicate right move of turtle
+
+done() # stop the turtle
